@@ -1,24 +1,38 @@
-# RobustnessPrediction
-This repository contains the models and results presented in the paper: Evaluating the Contribution of Model Complexity in Predicting Robustness in Synthetic Genetic Circuits. 
+# Robustness Prediction Repository
 
-## Reproducibility 
+Welcome to the Robustness Prediction repository! This collection houses the models and outcomes featured in the paper titled "Evaluating the Contribution of Model Complexity in Predicting Robustness in Synthetic Genetic Circuits."  (ADD CITATION LATER)
 
-To reproduce the results, first go to https://github.com/MyersResearchGroup/iBioSim and download the current release of iBioSim. Next, open iBioSim and create a new project. If warning appears you can close the message using the OK button. Once the project is created you can see the iBioSim GUI.
+## Reproducibility Guide
 
-![alt text](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic1.png?raw=true)
+To reproduce the results, follow these steps:
 
-From there, navigate to File -> Import -> Archive. In the pop up window select one of the models provided in this repository (i.e. OG_ECC). Now, the GUI shows the content of the project on the left hand side. Selecting the topModel by double clicking opens a tab visualizing the model.
+1. **Download iBioSim:**
+   - Visit [iBioSim's GitHub](https://github.com/MyersResearchGroup/iBioSim) and download the latest release.
+   - Install and open iBioSim and create a new project.
 
-![alt text](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic2.png?raw=true)
+   ![iBioSim GUI](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic1.png?raw=true)
 
-To run a simulation, open a simulation environment by selecting one of the transitions or steady state failures by expanding its view by clicking the arrowhead next to it. Clicking the green simulation icon then opens the simulation view. Here, you can simply press the green play button at the top to run the simulation.
+2. **Import Model:**
+   - If a warning appears, dismiss it with the OK button.
+   - Navigate to File -> Import -> Archive within iBioSim.
+   - Choose a model from this repository (e.g., OG_ECC).
 
-![alt text](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic3.png?raw=true)
+   ![Import Model](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic2.png?raw=true)
 
-After the simulation finished, select the TSD graph view. Double click on the canvas to open the edit graph pop op window. There, select Percent Termination, set a checkmark next to Glitch and press okay. Now, you can see probability of the failure over time. 
+3. **Run Simulation:**
+   - In the project view, double-click on the topModel to visualize it.
+   - Open a simulation environment by selecting a transition or steady state failure.
+   - Click the green simulation icon to open the simulation view.
+   - Press the green play button to run the simulation.
 
-![alt text](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic4.png?raw=true)
+   ![Run Simulation](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic3.png?raw=true)
 
+4. **Analyze Results:**
+   - After the simulation, select the TSD graph view.
+   - Double-click on the canvas to open the edit graph pop-up window.
+   - Choose "Percent Termination," checkmark "Glitch," and press okay.
+   - View the probability of failure over time.
 
+   ![Analyze Results](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic4.png?raw=true)
 
-
+Feel free to explore the robustness predictions of all models provided using this repository. If you have any questions or encounter issues, refer to the iBioSim documentation for additional support. Happy simulating!
