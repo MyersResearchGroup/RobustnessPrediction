@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" arrays:required="true" comp:required="true" fbc:required="false" layout:required="false" level="3" version="2" xmlns:arrays="http://www.sbml.org/sbml/level3/version1/arrays/version1" xmlns:comp="http://www.sbml.org/sbml/level3/version1/comp/version1" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1">
+  <model fbc:strict="false" id="AmtRpart_module" metaid="iBioSim32">
+    <annotation>
+      <ModelToSBOL xmlns="http://sbolstandard.org/modeltosbol/1.0#">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:mts="http://sbolstandard.org/modeltosbol/1.0#">
+          <rdf:Description rdf:about="#iBioSim1">
+            <mts:ModuleDefinitions>
+              <rdf:Bag>
+                <rdf:li rdf:resource="http://www.async.utah.edu/AmtRpart_module/1"/></rdf:Bag></mts:ModuleDefinitions></rdf:Description></rdf:RDF></ModelToSBOL>
+    </annotation>
+      <comp:listOfPorts xmlns:comp="http://www.sbml.org/sbml/level3/version1/comp/version1">
+      <comp:port comp:id="compartment__Cell" comp:idRef="Cell" sboTerm="SBO:0000601"/>
+      <comp:port comp:id="input__Y_HlyIIR" comp:idRef="Y_HlyIIR" sboTerm="SBO:0000600"/>
+      <comp:port comp:id="input__Y_AraC" comp:idRef="Y_AraC" sboTerm="SBO:0000600"/>
+      <comp:port comp:id="output__Y_AmtR" comp:idRef="Y_AmtR" sboTerm="SBO:0000601"/>
+    </comp:listOfPorts>
+    <layout:listOfLayouts xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <layout:layout layout:id="iBioSim">
+        <layout:dimensions layout:depth="0" layout:height="425" layout:width="1070"/>
+        <layout:listOfAdditionalGraphicalObjects>
+          <layout:generalGlyph layout:id="Glyph__AmtR_SS_Rule" layout:metaidRef="AmtR_SS_Rule">
+            <layout:boundingBox>
+              <layout:position layout:x="130" layout:y="259.75390625"/>
+              <layout:dimensions layout:height="50" layout:width="50"/>
+            </layout:boundingBox>
+            <layout:listOfReferenceGlyphs>
+              <layout:referenceGlyph layout:glyph="Glyph__Y_AraC" layout:id="Glyph__AmtR_SS_Rule__substrate__Y_AraC" layout:role="substrate">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="310" layout:y="27.458984375"/>
+                      <layout:end layout:x="155" layout:y="284.75390625"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:referenceGlyph>
+              <layout:referenceGlyph layout:glyph="Glyph__Y_HlyIIR" layout:id="Glyph__AmtR_SS_Rule__substrate__Y_HlyIIR" layout:role="substrate">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="50" layout:y="27.458984375"/>
+                      <layout:end layout:x="155" layout:y="284.75390625"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:referenceGlyph>
+              <layout:referenceGlyph layout:glyph="Glyph__Y_AmtR" layout:id="Glyph__AmtR_SS_Rule__substrate__Y_AmtR" layout:role="substrate">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="165" layout:y="192.3359375"/>
+                      <layout:end layout:x="155" layout:y="284.75390625"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:referenceGlyph>
+              <layout:referenceGlyph layout:glyph="Glyph__AmtR_SS" layout:id="Glyph__AmtR_SS_Rule__product__AmtR_SS" layout:role="product">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="155" layout:y="284.75390625"/>
+                      <layout:end layout:x="194" layout:y="374.75390625"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:referenceGlyph>
+            </layout:listOfReferenceGlyphs>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="Glyph__AmtR_SS" layout:reference="AmtR_SS">
+            <layout:boundingBox>
+              <layout:position layout:x="179" layout:y="359.75390625"/>
+              <layout:dimensions layout:height="30" layout:width="30"/>
+            </layout:boundingBox>
+            <layout:listOfReferenceGlyphs>
+              <layout:referenceGlyph layout:glyph="Glyph__dy_AmtR" layout:id="Glyph__AmtR_SS__product__dy_AmtR" layout:role="product">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="135" layout:y="255"/>
+                      <layout:end layout:x="90" layout:y="130"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:referenceGlyph>
+            </layout:listOfReferenceGlyphs>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="Glyph__ExNoise" layout:reference="ExNoise">
+            <layout:boundingBox>
+              <layout:position layout:x="512" layout:y="81"/>
+              <layout:dimensions layout:height="30" layout:width="30"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+        </layout:listOfAdditionalGraphicalObjects>
+        <layout:listOfCompartmentGlyphs>
+          <layout:compartmentGlyph layout:compartment="Cell" layout:id="Glyph__Cell">
+            <layout:boundingBox>
+              <layout:position layout:x="0" layout:y="0"/>
+              <layout:dimensions layout:height="425" layout:width="1070"/>
+            </layout:boundingBox>
+          </layout:compartmentGlyph>
+        </layout:listOfCompartmentGlyphs>
+        <layout:listOfSpeciesGlyphs>
+          <layout:speciesGlyph layout:id="Glyph__AmtRpart_fc" layout:species="AmtRpart_fc">
+            <layout:boundingBox>
+              <layout:position layout:x="130" layout:y="0"/>
+              <layout:dimensions layout:height="30" layout:width="100"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="Glyph__Y_AmtR" layout:species="Y_AmtR">
+            <layout:boundingBox>
+              <layout:position layout:x="115" layout:y="177.3359375"/>
+              <layout:dimensions layout:height="30" layout:width="100"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="Glyph__Y_HlyIIR" layout:species="Y_HlyIIR">
+            <layout:boundingBox>
+              <layout:position layout:x="0" layout:y="12.458984375"/>
+              <layout:dimensions layout:height="30" layout:width="100"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="Glyph__Y_AraC" layout:species="Y_AraC">
+            <layout:boundingBox>
+              <layout:position layout:x="260" layout:y="12.458984375"/>
+              <layout:dimensions layout:height="30" layout:width="100"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+        </layout:listOfSpeciesGlyphs>
+        <layout:listOfReactionGlyphs>
+          <layout:reactionGlyph layout:id="Glyph__dy_AmtR" layout:reaction="dy_AmtR">
+            <layout:boundingBox>
+              <layout:position layout:x="180" layout:y="104.91796875"/>
+              <layout:dimensions layout:height="20" layout:width="20"/>
+            </layout:boundingBox>
+            <layout:listOfSpeciesReferenceGlyphs>
+              <layout:speciesReferenceGlyph layout:id="Glyph__dy_AmtR__modifier__AmtRpart_fc" layout:role="modifier" layout:speciesGlyph="Glyph__AmtRpart_fc">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="180" layout:y="15"/>
+                      <layout:end layout:x="190" layout:y="114.91796875"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="Glyph__dy_AmtR__modifier__Y_HlyIIR" layout:role="modifier" layout:speciesGlyph="Glyph__Y_HlyIIR">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="50" layout:y="27.458984375"/>
+                      <layout:end layout:x="190" layout:y="114.91796875"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="Glyph__dy_AmtR__modifier__Y_AraC" layout:role="modifier" layout:speciesGlyph="Glyph__Y_AraC">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="310" layout:y="27.458984375"/>
+                      <layout:end layout:x="190" layout:y="114.91796875"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="Glyph__dy_AmtR__product__Y_AmtR" layout:role="product" layout:speciesGlyph="Glyph__Y_AmtR">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="190" layout:y="114.91796875"/>
+                      <layout:end layout:x="165" layout:y="192.3359375"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+            </layout:listOfSpeciesReferenceGlyphs>
+          </layout:reactionGlyph>
+        </layout:listOfReactionGlyphs>
+        <layout:listOfTextGlyphs>
+          <layout:textGlyph layout:graphicalObject="Glyph__AmtRpart_fc" layout:id="TextGlyph__AmtRpart_fc" layout:text="AmtRpart_fc">
+            <layout:boundingBox>
+              <layout:position layout:x="130" layout:y="0"/>
+              <layout:dimensions layout:height="30" layout:width="100"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="Glyph__Cell" layout:id="TextGlyph__Cell" layout:text="Cell">
+            <layout:boundingBox>
+              <layout:position layout:x="0" layout:y="0"/>
+              <layout:dimensions layout:height="425" layout:width="1070"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="Glyph__Y_AmtR" layout:id="TextGlyph__Y_AmtR" layout:text="Y_AmtR">
+            <layout:boundingBox>
+              <layout:position layout:x="115" layout:y="177.3359375"/>
+              <layout:dimensions layout:height="30" layout:width="100"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="Glyph__Y_HlyIIR" layout:id="TextGlyph__Y_HlyIIR" layout:text="Y_HlyIIR">
+            <layout:boundingBox>
+              <layout:position layout:x="0" layout:y="12.458984375"/>
+              <layout:dimensions layout:height="30" layout:width="100"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="Glyph__Y_AraC" layout:id="TextGlyph__Y_AraC" layout:text="Y_AraC">
+            <layout:boundingBox>
+              <layout:position layout:x="260" layout:y="12.458984375"/>
+              <layout:dimensions layout:height="30" layout:width="100"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="Glyph__dy_AmtR" layout:id="TextGlyph__dy_AmtR" layout:text="dy_AmtR">
+            <layout:boundingBox>
+              <layout:position layout:x="180" layout:y="104.91796875"/>
+              <layout:dimensions layout:height="20" layout:width="20"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="Glyph__AmtR_SS_Rule" layout:id="TextGlyph__AmtR_SS_Rule" layout:text="AmtR_SS_Rule">
+            <layout:boundingBox>
+              <layout:position layout:x="130" layout:y="259.75390625"/>
+              <layout:dimensions layout:height="50" layout:width="50"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="Glyph__AmtR_SS" layout:id="TextGlyph__AmtR_SS" layout:text="AmtR_SS">
+            <layout:boundingBox>
+              <layout:position layout:x="179" layout:y="359.75390625"/>
+              <layout:dimensions layout:height="30" layout:width="30"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="Glyph__ExNoise" layout:id="TextGlyph__ExNoise" layout:text="ExNoise">
+            <layout:boundingBox>
+              <layout:position layout:x="512" layout:y="81"/>
+              <layout:dimensions layout:height="30" layout:width="30"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+        </layout:listOfTextGlyphs>
+      </layout:layout>
+    </layout:listOfLayouts>
+    <listOfFunctionDefinitions>
+      <functionDefinition id="normal" name="Normal distribution">
+        <annotation>
+          <distribution xmlns="http://sbml.org/annotations/distribution" definition="http://en.wikipedia.org/wiki/Normal_distribution"/>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <lambda>
+            <bvar>
+              <ci> m </ci>
+            </bvar>
+            <bvar>
+              <ci> s </ci>
+            </bvar>
+            <ci> m </ci>
+          </lambda>
+        </math>
+            </functionDefinition>
+    </listOfFunctionDefinitions>
+    <listOfUnitDefinitions/>
+    <listOfCompartments>
+      <compartment constant="true" id="Cell" size="1" spatialDimensions="3"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="true" id="AmtRpart_fc" initialAmount="2" metaid="iBioSim2" sboTerm="SBO:0000590">
+        <annotation>
+          <ModelToSBOL xmlns="http://sbolstandard.org/modeltosbol/1.0#">
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:mts="http://sbolstandard.org/modeltosbol/1.0#">
+              <rdf:Description rdf:about="#iBioSim2">
+                <mts:ComponentDefinitions>
+                  <rdf:Bag>
+                    <rdf:li rdf:resource="http://www.async.utah.edu/AmtRpart/1"/></rdf:Bag></mts:ComponentDefinitions><mts:FunctionalComponents>
+                  <rdf:Bag>
+                    <rdf:li rdf:resource="http://www.async.utah.edu/AmtRpart/1"/></rdf:Bag></mts:FunctionalComponents><mts:DNAComponents>
+                  <rdf:Seq>
+                    <rdf:li rdf:resource="http://www.async.utah.edu/AmtRpart/1"/></rdf:Seq></mts:DNAComponents><mts:Strand>+</mts:Strand></rdf:Description></rdf:RDF></ModelToSBOL>
+        </annotation>
+            </species>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="true" id="Y_AmtR" initialAmount="0" metaid="iBioSim27"/>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="true" id="Y_HlyIIR" initialAmount="0" metaid="iBioSim28"/>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="true" id="Y_AraC" initialAmount="0" metaid="iBioSim29"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter constant="true" id="kr_f" metaid="iBioSim1" name="Forward repression binding rate" value="0.5"/>
+      <parameter constant="true" id="kr_r" metaid="iBioSim4" name="Reverse repression binding rate" value="1"/>
+      <parameter constant="true" id="ka_f" metaid="iBioSim5" name="Forward activation binding rate" value="0.0033"/>
+      <parameter constant="true" id="ka_r" metaid="iBioSim6" name="Reverse activation binding rate" value="1"/>
+      <parameter constant="true" id="ko_f" metaid="iBioSim7" name="Forward RNAP binding rate" value="0.033"/>
+      <parameter constant="true" id="ko_r" metaid="iBioSim8" name="Reverse RNAP binding rate" value="1"/>
+      <parameter constant="true" id="kao_f" metaid="iBioSim9" name="Forward activated RNAP binding rate" value="1"/>
+      <parameter constant="true" id="kao_r" metaid="iBioSim10" name="Reverse activated RNAP binding rate" value="1"/>
+      <parameter constant="true" id="nc" metaid="iBioSim11" name="Stoichiometry of binding" value="2"/>
+      <parameter constant="true" id="nr" metaid="iBioSim12" name="Initial RNAP count" value="30"/>
+      <parameter constant="true" id="ko" metaid="iBioSim13" name="Open complex production rate" value="0.05"/>
+      <parameter constant="true" id="kb" metaid="iBioSim14" name="Basal production rate" value="0.0001"/>
+      <parameter constant="true" id="ng" metaid="iBioSim15" name="Initial promoter count" value="2"/>
+      <parameter constant="true" id="np" metaid="iBioSim16" name="Stoichiometry of production" value="10"/>
+      <parameter constant="true" id="ka" metaid="iBioSim17" name="Activated production rate" value="0.25"/>
+      <parameter constant="false" id="AmtR_SS" metaid="iBioSim18" value="0"/>
+      <parameter constant="true" id="ymax_HlyIIR" metaid="iBioSim19" value="0"/>
+      <parameter constant="true" id="ymin_HlyIIR" metaid="iBioSim20" value="0"/>
+      <parameter constant="true" id="alpha_HlyIIR" metaid="iBioSim21" value="1"/>
+      <parameter constant="true" id="beta_HlyIIR" metaid="iBioSim22" value="1"/>
+      <parameter constant="true" id="ymax_AmtR" metaid="iBioSim23" value="0"/>
+      <parameter constant="true" id="ymin_AmtR" metaid="iBioSim24" value="0"/>
+      <parameter constant="true" id="n_AmtR" metaid="iBioSim25" value="0"/>
+      <parameter constant="true" id="K_AmtR" metaid="iBioSim26" value="0"/>
+      <parameter constant="false" id="ExNoise" metaid="iBioSim31" value="0.4"/>
+    </listOfParameters>
+    <listOfInitialAssignments>
+      <initialAssignment metaid="init__K_AmtR" symbol="K_AmtR">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <abs/>
+            <apply>
+              <ci> normal </ci>
+              <cn> 0.07 </cn>
+              <apply>
+                <times/>
+                <cn> 0.07 </cn>
+                <ci> ExNoise </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </initialAssignment>
+      <initialAssignment metaid="init__n_AmtR" symbol="n_AmtR">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <abs/>
+            <apply>
+              <ci> normal </ci>
+              <cn> 1.6 </cn>
+              <apply>
+                <times/>
+                <cn> 1.6 </cn>
+                <ci> ExNoise </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </initialAssignment>
+      <initialAssignment metaid="init__ymax_AmtR" symbol="ymax_AmtR">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <abs/>
+            <apply>
+              <ci> normal </ci>
+              <cn> 3.8 </cn>
+              <apply>
+                <times/>
+                <cn> 3.8 </cn>
+                <ci> ExNoise </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </initialAssignment>
+      <initialAssignment metaid="init__ymax_HlyIIR" symbol="ymax_HlyIIR">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <abs/>
+            <apply>
+              <ci> normal </ci>
+              <cn> 2.5 </cn>
+              <apply>
+                <times/>
+                <cn> 2.5 </cn>
+                <ci> ExNoise </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </initialAssignment>
+      <initialAssignment metaid="init__ymin_AmtR" symbol="ymin_AmtR">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <abs/>
+            <apply>
+              <ci> normal </ci>
+              <cn> 0.06 </cn>
+              <apply>
+                <times/>
+                <cn> 0.06 </cn>
+                <ci> ExNoise </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </initialAssignment>
+      <initialAssignment metaid="init__ymin_HlyIIR" symbol="ymin_HlyIIR">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <abs/>
+            <apply>
+              <ci> normal </ci>
+              <cn> 0.07 </cn>
+              <apply>
+                <times/>
+                <cn> 0.07 </cn>
+                <ci> ExNoise </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </initialAssignment>
+    </listOfInitialAssignments>
+    <listOfRules>
+      <assignmentRule id="AmtR_SS_Rule" metaid="AmtR_SS_Rule" sboTerm="SBO:0000391" variable="AmtR_SS">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <minus/>
+            <apply>
+              <plus/>
+              <ci> ymin_AmtR </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <ci> ymax_AmtR </ci>
+                    <ci> ymin_AmtR </ci>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> K_AmtR </ci>
+                    <ci> n_AmtR </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> K_AmtR </ci>
+                    <ci> n_AmtR </ci>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <times/>
+                            <ci> Y_AraC </ci>
+                            <ci> alpha_HlyIIR </ci>
+                          </apply>
+                          <apply>
+                            <plus/>
+                            <apply>
+                              <minus/>
+                              <ci> Y_HlyIIR </ci>
+                              <ci> ymin_HlyIIR </ci>
+                            </apply>
+                            <apply>
+                              <times/>
+                              <ci> beta_HlyIIR </ci>
+                              <apply>
+                                <minus/>
+                                <ci> ymax_HlyIIR </ci>
+                                <ci> Y_HlyIIR </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <minus/>
+                          <ci> ymax_HlyIIR </ci>
+                          <ci> ymin_HlyIIR </ci>
+                        </apply>
+                      </apply>
+                      <ci> Y_HlyIIR </ci>
+                    </apply>
+                    <ci> n_AmtR </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <ci> Y_AmtR </ci>
+          </apply>
+        </math>
+            </assignmentRule>
+    </listOfRules>
+    <listOfConstraints/>
+    <listOfReactions>
+      <reaction compartment="Cell" id="dy_AmtR" metaid="iBioSim30" reversible="false">
+        <listOfReactants/>
+        <listOfProducts>
+          <speciesReference constant="true" species="Y_AmtR" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="AmtRpart_fc"/>
+          <modifierSpeciesReference species="Y_HlyIIR"/>
+          <modifierSpeciesReference species="Y_AraC"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <piecewise>
+              <piece>
+                <apply>
+                  <times/>
+                  <ci> tauON </ci>
+                  <ci> AmtR_SS </ci>
+                </apply>
+                <apply>
+                  <gt/>
+                  <ci> AmtR_SS </ci>
+                  <cn type="integer"> 0 </cn>
+                </apply>
+              </piece>
+              <otherwise>
+                <apply>
+                  <times/>
+                  <ci> tauOFF </ci>
+                  <ci> AmtR_SS </ci>
+                </apply>
+              </otherwise>
+            </piecewise>
+          </math>
+                  <listOfLocalParameters>
+            <localParameter id="tauON" value="1.7"/>
+            <localParameter id="tauOFF" value="4.044444444"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+    <listOfEvents/>
+  </model>
+</sbml>
