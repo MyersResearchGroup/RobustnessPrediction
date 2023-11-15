@@ -5,7 +5,7 @@ This repository contains the models and results presented in the paper: Evaluati
 
 To reproduce the results, first go to https://github.com/MyersResearchGroup/iBioSim and download the current release of iBioSim. Next, open iBioSim and create a new project. If warning appears you can close the message using the OK button. Once the project is created you can see the iBioSim GUI.
 
-Pic 1
+![alt text](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic1.png?raw=true)
 
 From there, navigate to File -> Import -> Archive. In the pop up window select one of the models provided in this repository (i.e. OG_ECC). Now, the GUI shows the content of the project on the left hand side. Selecting the topModel by double clicking opens a tab visualizing the model.
 
