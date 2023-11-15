@@ -9,15 +9,15 @@ To reproduce the results, first go to https://github.com/MyersResearchGroup/iBio
 
 From there, navigate to File -> Import -> Archive. In the pop up window select one of the models provided in this repository (i.e. OG_ECC). Now, the GUI shows the content of the project on the left hand side. Selecting the topModel by double clicking opens a tab visualizing the model.
 
-Pic2
+![alt text](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic2.png?raw=true)
 
 To run a simulation, open a simulation environment by selecting one of the transitions or steady state failures by expanding its view by clicking the arrowhead next to it. Clicking the green simulation icon then opens the simulation view. Here, you can simply press the green play button at the top to run the simulation.
 
-Pic3
+![alt text](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic3.png?raw=true)
 
 After the simulation finished, select the TSD graph view. Double click on the canvas to open the edit graph pop op window. There, select Percent Termination, set a checkmark next to Glitch and press okay. Now, you can see probability of the failure over time. 
 
-Pic 4
+![alt text](https://github.com/MyersResearchGroup/RobustnessPrediction/blob/main/Media/Pic4.png?raw=true)
 
 
 
